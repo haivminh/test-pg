@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#641e2b" />
+  <meta name="description" content="Phú Gia - Đồ thờ và tượng thờ chế tác tại làng nghề Sơn Đồng. Tinh hoa thủ công, gìn giữ nếp nhà Việt." />
+  <title>PHÚ GIA | Đồ thờ & Tượng thờ Sơn Đồng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-mark">✳</span>
+    <span>Tinh hoa đồ thờ thủ công từ làng nghề Sơn Đồng</span>
+    <span class="announcement-divider">|</span>
+    <a href="#craft">Tìm hiểu về Phú Gia <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-main container">
+      <button class="mobile-menu-toggle icon-button" id="mobileMenuToggle" aria-label="Mở danh mục" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="brand" href="#top" aria-label="Phú Gia - Trang chủ">
+        <span class="brand-seal"><span>PG</span></span>
+        <span class="brand-copy">
+          <strong>PHÚ GIA</strong>
+          <small>ĐỒ THỜ & TƯỢNG THỜ</small>
+        </span>
+      </a>
+
+      <div class="search-wrap">
+        <form class="search-box" id="searchForm" role="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+          <input id="searchInput" type="search" placeholder="Bạn đang tìm sản phẩm nào?" autocomplete="off" aria-label="Tìm kiếm sản phẩm" />
+          <button type="submit">Tìm kiếm</button>
+        </form>
+        <div class="search-results" id="searchResults" aria-live="polite"></div>
+      </div>
+
+      <div class="header-actions">
+        <a class="header-contact" href="tel:0988888888">
+          <span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5c0 8 6.5 14.5 14.5 14.5h.5v-4.2l-4.2-1.2-1.7 2a12.6 12.6 0 0 1-5.7-5.7l2-1.7L9.2 4H5z"></path></svg></span>
+          <span><small>Hotline tư vấn</small><strong>0988 888 888</strong></span>
+        </a>
+        <button class="cart-button" id="cartButton" aria-label="Mở giỏ hàng">
+          <span class="cart-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="9.5" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg></span>
+          <span class="cart-label">Giỏ hàng</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-shell" id="navShell">
+      <nav class="main-nav container" aria-label="Danh mục chính">
+        <button class="nav-category" id="categoryToggle" aria-expanded="false" aria-controls="megaMenu">
+          <span class="category-lines"><i></i><i></i><i></i></span>
+          <span>Danh mục sản phẩm</span>
+          <svg class="chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"></path></svg>
+        </button>
+        <div class="nav-links">
+          <a href="#categories">Đồ thờ gia tiên</a>
+          <a href="#categories">Tượng thờ</a>
+          <a href="#categories">Đồ thờ Phật</a>
+          <a href="#featured">Sản phẩm nổi bật</a>
+          <a href="#craft">Làng nghề Sơn Đồng</a>
+        </div>
+        <a class="nav-appointment" href="#contact">Tư vấn chế tác <span>↗</span></a>
+      </nav>
+
+      <div class="mega-menu container" id="megaMenu" aria-label="Toàn bộ danh mục sản phẩm">
+        <div class="mega-intro">
+          <span class="eyebrow">KHÁM PHÁ PHÚ GIA</span>
+          <h3>Chọn một món,<br><em>trọn một nếp nhà.</em></h3>
+          <p>Các dòng sản phẩm được sắp xếp theo nhu cầu sử dụng, giúp bạn tìm đúng món đồ cần thiết chỉ trong một lần xem.</p>
+          <a class="text-link" href="#categories">Xem tất cả danh mục <span>→</span></a>
+        </div>
+        <div class="mega-columns">
+          <div class="mega-column">
+            <h4>ĐỒ THỜ GIA TIÊN</h4>
+            <a href="#featured">Án gian thờ</a>
+            <a href="#featured">Sập thờ</a>
+            <a href="#featured">Bàn thờ đứng</a>
+            <a href="#featured">Bàn thờ treo tường</a>
+            <a href="#featured">Tủ thờ &amp; khám thờ</a>
+            <a href="#featured">Ngai thờ &amp; bài vị</a>
+          </div>
+          <div class="mega-column">
+            <h4>TƯỢNG THỜ</h4>
+            <a href="#featured">Tượng Tam Thế</a>
+            <a href="#featured">Tượng A Di Đà</a>
+            <a href="#featured">Tượng Quan Âm</a>
+            <a href="#featured">Tượng Thánh &amp; tượng Mẫu</a>
+            <a href="#featured">Tượng gia tiên</a>
+            <a href="#featured">Tượng linh vật</a>
+          </div>
+          <div class="mega-column">
+            <h4>ĐỒ THỜ &amp; TRANG TRÍ</h4>
+            <a href="#featured">Đồ thờ bằng đồng</a>
+            <a href="#featured">Đồ thờ bằng gỗ</a>
+            <a href="#featured">Đồ thờ sứ</a>
+            <a href="#featured">Hoành phi – câu đối</a>
+            <a href="#featured">Cuốn thư – cửa võng</a>
+            <a href="#featured">Đèn, nến &amp; phụ kiện</a>
+          </div>
+        </div>
+        <a class="mega-feature" href="#craft">
+          <img src="https://bizweb.dktcdn.net/100/509/197/articles/1-thiet-ke-phong-tho-gia-dinh.jpg?v=1722940187620" alt="Không gian phòng thờ gỗ truyền thống" />
+          <span class="mega-feature-overlay"></span>
+          <span class="mega-feature-copy"><small>GIÁ TRỊ LÀNG NGHỀ</small><strong>Nét chạm Sơn Đồng<br>qua bàn tay nghệ nhân</strong><b>Khám phá câu chuyện <i>↗</i></b></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span></span> TỪ LÀNG NGHỀ SƠN ĐỒNG</div>
+          <h1>Gìn giữ nếp nhà,<br><em>trao truyền tinh hoa.</em></h1>
+          <p>Đồ thờ và tượng thờ được chế tác với sự chỉn chu trong từng đường nét, trân trọng giá trị văn hóa và không gian thờ tự của mỗi gia đình Việt.</p>
+          <div class="hero-buttons">
+            <a class="button-primary" href="#categories">Khám phá sản phẩm <span>→</span></a>
+            <a class="button-text" href="#craft">Câu chuyện Phú Gia <span>↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-seal">PG</span>
+            <span><strong>Chế tác theo yêu cầu</strong><small>Tư vấn chất liệu, kích thước và hoa văn phù hợp</small></span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="https://legiagroup.com.vn/upload/tin-tuc/trang-tri-ban-tho-gia-tien-can-sap-xep-do-dung-vi-tri.jpeg" alt="Không gian thờ gia tiên bằng gỗ được bài trí trang nghiêm" />
+            <div class="image-caption"><span>01 / 03</span><span>KHÔNG GIAN THỜ GIA TIÊN</span></div>
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span>PHÚ GIA</span><b>工</b><small>THỦ CÔNG<br>TRUYỀN THỐNG</small></div>
+          <div class="hero-side-caption">TÔN KÍNH CỘI NGUỒN · GÌN GIỮ GIA PHONG</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line container"><span>THỦ CÔNG TỪ TÂM</span><span class="ornament-line"><i></i></span><span>GIÁ TRỊ VƯỢT THỜI GIAN</span></div>
+    </section>
+
+    <section class="category-section section-space" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">DANH MỤC SẢN PHẨM</span><h2>Tìm đúng món đồ <em>bạn cần</em></h2></div>
+          <p>Từ không gian thờ gia tiên đến tượng thờ, đồ thờ thủ công – các nhóm sản phẩm được chọn lọc và đặt cạnh nhau để bạn dễ dàng khám phá.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-large" href="#featured" data-category-link="Đồ thờ gia tiên">
+            <img src="https://file4.batdongsan.com.vn/2020/09/04/akCJKkFO/20200904134632-624d.jpg" alt="Không gian thờ gia tiên với án thờ gỗ chạm" loading="lazy" />
+            <span class="category-shade"></span><span class="category-index">01</span>
+            <span class="category-info"><small>KHÔNG GIAN THỜ TỰ</small><strong>Đồ thờ gia tiên</strong><i>Khám phá danh mục →</i></span>
+          </a>
+          <a class="category-card" href="#featured" data-category-link="Tượng thờ">
+            <img src="https://vinhtuong.com/sites/default/files/inline-images/tran-thach-cao-phong-tho-an-tuong.png" alt="Không gian thờ truyền thống" loading="lazy" />
+            <span class="category-shade"></span><span class="category-index">02</span>
+            <span class="category-info"><small>ĐƯỜNG NÉT TẠO TÁC</small><strong>Tượng thờ</strong><i>Khám phá danh mục →</i></span>
+          </a>
+          <a class="category-card" href="#featured" data-category-link="Đồ thờ Phật">
+            <img src="https://cdn.dogooccho.com.vn/media/seo-2025/tin-tuc/ban-tho-dung.jpg" alt="Bàn thờ gỗ được chế tác tinh xảo" loading="lazy" />
+            <span class="category-shade"></span><span class="category-index">03</span>
+            <span class="category-info"><small>KHÔNG GIAN TÂM LINH</small><strong>Đồ thờ Phật</strong><i>Khám phá danh mục →</i></span>
+          </a>
+          <a class="category-card" href="#featured" data-category-link="Đồ thờ thủ công">
+            <img src="https://giadinh.mediacdn.vn/296230595582509056/2025/11/14/noi-that-phong-tho-gia-tien-1763113375524735265054-151-146-1103-1669-crop-17631133881751834975808.jpg" alt="Đồ thờ và nội thất phòng thờ" loading="lazy" />
+            <span class="category-shade"></span><span class="category-index">04</span>
+            <span class="category-info"><small>HOÀN THIỆN KHÔNG GIAN</small><strong>Đồ thờ &amp; phụ kiện</strong><i>Khám phá danh mục →</i></span>
+          </a>
+        </div>
+        <div class="category-quick-links">
+          <span>ĐƯỢC QUAN TÂM:</span>
+          <a href="#featured">Án gian</a><b>·</b><a href="#featured">Sập thờ</a><b>·</b><a href="#featured">Bàn thờ chung cư</a><b>·</b><a href="#featured">Hoành phi câu đối</a><b>·</b><a href="#featured">Đồ thờ bằng đồng</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section section-space" id="featured">
+      <div class="container">
+        <div class="featured-topline">
+          <div class="section-heading compact-heading">
+            <div><span class="eyebrow">ĐƯỢC TUYỂN CHỌN TẠI PHÚ GIA</span><h2>Sản phẩm <em>tiêu biểu</em></h2></div>
+          </div>
+          <a class="text-link" href="#contact">Nhận tư vấn sản phẩm <span>→</span></a>
+        </div>
+        <div class="filter-row" role="group" aria-label="Lọc sản phẩm">
+          <button class="filter-chip active" data-filter="all">Tất cả</button>
+          <button class="filter-chip" data-filter="Gia tiên">Đồ thờ gia tiên</button>
+          <button class="filter-chip" data-filter="Tượng">Tượng thờ</button>
+          <button class="filter-chip" data-filter="Đồ thờ">Đồ thờ thủ công</button>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-type="Gia tiên">
+            <a class="product-image" href="#contact"><img src="https://legiagroup.com.vn/upload/tin-tuc/trang-tri-ban-tho-gia-tien-can-sap-xep-do-dung-vi-tri.jpeg" alt="Không gian án gian thờ gỗ" loading="lazy" /><span class="product-tag">CHẾ TÁC THEO YÊU CẦU</span><span class="product-zoom">↗</span></a>
+            <div class="product-meta"><span>ĐỒ THỜ GIA TIÊN</span><span>MÃ: PG-AG01</span></div>
+            <h3><a href="#contact">Án gian thờ chạm thủ công</a></h3>
+            <div class="product-bottom"><strong>Liên hệ báo giá</strong><button class="add-cart" data-name="Án gian thờ chạm thủ công" aria-label="Thêm Án gian thờ vào giỏ">+</button></div>
+          </article>
+          <article class="product-card" data-type="Gia tiên">
+            <a class="product-image" href="#contact"><img src="https://cdn.dogooccho.com.vn/media/seo-2025/tin-tuc/ban-tho-dung.jpg" alt="Sập thờ gỗ truyền thống" loading="lazy" /><span class="product-tag">ĐƯỢC QUAN TÂM</span><span class="product-zoom">↗</span></a>
+            <div class="product-meta"><span>ĐỒ THỜ GIA TIÊN</span><span>MÃ: PG-ST02</span></div>
+            <h3><a href="#contact">Sập thờ chạm hoa văn truyền thống</a></h3>
+            <div class="product-bottom"><strong>Liên hệ báo giá</strong><button class="add-cart" data-name="Sập thờ chạm hoa văn truyền thống" aria-label="Thêm Sập thờ vào giỏ">+</button></div>
+          </article>
+          <article class="product-card" data-type="Đồ thờ">
+            <a class="product-image" href="#contact"><img src="https://bizweb.dktcdn.net/100/509/197/articles/1-thiet-ke-phong-tho-gia-dinh.jpg?v=1722940187620" alt="Không gian đồ thờ bằng gỗ" loading="lazy" /><span class="product-tag">DÒNG SẢN PHẨM GỖ</span><span class="product-zoom">↗</span></a>
+            <div class="product-meta"><span>ĐỒ THỜ THỦ CÔNG</span><span>MÃ: PG-ĐT03</span></div>
+            <h3><a href="#contact">Bộ đồ thờ gỗ hoàn thiện</a></h3>
+            <div class="product-bottom"><strong>Liên hệ báo giá</strong><button class="add-cart" data-name="Bộ đồ thờ gỗ hoàn thiện" aria-label="Thêm Bộ đồ thờ gỗ vào giỏ">+</button></div>
+          </article>
+          <article class="product-card" data-type="Tượng">
+            <a class="product-image" href="#contact"><img src="https://file4.batdongsan.com.vn/2020/09/04/akCJKkFO/20200904134632-624d.jpg" alt="Không gian thờ với tượng và đồ thờ" loading="lazy" /><span class="product-tag">TẠO TÁC TINH XẢO</span><span class="product-zoom">↗</span></a>
+            <div class="product-meta"><span>TƯỢNG THỜ</span><span>MÃ: PG-TT04</span></div>
+            <h3><a href="#contact">Tượng thờ chế tác theo mẫu</a></h3>
+            <div class="product-bottom"><strong>Liên hệ báo giá</strong><button class="add-cart" data-name="Tượng thờ chế tác theo mẫu" aria-label="Thêm Tượng thờ vào giỏ">+</button></div>
+          </article>
+        </div>
+        <div class="products-footnote"><span class="footnote-mark">✳</span> Mỗi sản phẩm có thể được điều chỉnh kích thước, chất liệu và hoa văn theo nhu cầu thực tế.</div>
+      </div>
+    </section>
+
+    <section class="craft-section" id="craft">
+      <div class="craft-image"><img src="https://bizweb.dktcdn.net/100/509/197/articles/1-thiet-ke-phong-tho-gia-dinh.jpg?v=1722940187620" alt="Không gian thờ gỗ truyền thống" loading="lazy" /></div>
+      <div class="craft-content">
+        <span class="eyebrow eyebrow-light">DI SẢN LÀNG NGHỀ SƠN ĐỒNG</span>
+        <h2>Một nghề xưa,<br><em>nhiều đời gìn giữ.</em></h2>
+        <p>Phú Gia trân trọng tinh hoa của nghề thủ công truyền thống – nơi mỗi đường chạm, nét đục đều đòi hỏi sự kiên nhẫn, am hiểu và lòng thành kính với không gian thờ tự.</p>
+        <a class="button-outline" href="#contact">Tìm hiểu về Phú Gia <span>↗</span></a>
+        <div class="craft-signature"><span class="signature-line"></span><span>PHÚ GIA <small>· SƠN ĐỒNG · HÀ NỘI</small></span></div>
+      </div>
+      <div class="craft-watermark" aria-hidden="true">PG</div>
+    </section>
+
+    <section class="service-section section-space" id="contact">
+      <div class="container service-inner">
+        <div class="service-title"><span class="eyebrow">ĐỒNG HÀNH CÙNG GIA ĐÌNH BẠN</span><h2>Chọn đúng sản phẩm,<br><em>an tâm từng chi tiết.</em></h2></div>
+        <div class="service-items">
+          <div class="service-item"><span class="service-number">01</span><div><strong>Tư vấn tận tâm</strong><p>Lắng nghe nhu cầu và gợi ý sản phẩm phù hợp với không gian.</p></div></div>
+          <div class="service-item"><span class="service-number">02</span><div><strong>Chế tác theo yêu cầu</strong><p>Linh hoạt về kích thước, chất liệu, hoa văn và mức độ hoàn thiện.</p></div></div>
+          <div class="service-item"><span class="service-number">03</span><div><strong>Chỉn chu khi bàn giao</strong><p>Trao đổi rõ ràng về sản phẩm, tiến độ và phương án vận chuyển.</p></div></div>
+        </div>
+        <a class="service-contact" href="tel:0988888888"><span class="contact-icon">↗</span><span><small>BẠN CẦN TƯ VẤN?</small><strong>0988 888 888</strong></span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-block">
+        <a class="brand brand-footer" href="#top"><span class="brand-seal"><span>PG</span></span><span class="brand-copy"><strong>PHÚ GIA</strong><small>ĐỒ THỜ & TƯỢNG THỜ</small></span></a>
+        <p>Trân trọng giá trị truyền thống, gìn giữ nét đẹp trong từng không gian thờ tự Việt.</p>
+      </div>
+      <div class="footer-column"><h4>KHÁM PHÁ</h4><a href="#categories">Đồ thờ gia tiên</a><a href="#categories">Tượng thờ</a><a href="#categories">Đồ thờ Phật</a><a href="#categories">Đồ thờ &amp; phụ kiện</a></div>
+      <div class="footer-column"><h4>PHÚ GIA</h4><a href="#craft">Câu chuyện thương hiệu</a><a href="#craft">Làng nghề Sơn Đồng</a><a href="#contact">Tư vấn chế tác</a><a href="#contact">Liên hệ</a></div>
+      <div class="footer-column footer-contact"><h4>KẾT NỐI VỚI CHÚNG TÔI</h4><p>Sơn Đồng, Hoài Đức, Hà Nội</p><a href="tel:0988888888">0988 888 888</a><a href="mailto:phugia@example.com">phugia@example.com</a><div class="social-links"><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Zalo">Z</a><a href="#contact" aria-label="Youtube">▶</a></div></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© 2026 PHÚ GIA. BẢO LƯU MỌI QUYỀN.</span><span>CHẾ TÁC TỪ TÂM · GÌN GIỮ GIÁ TRỊ VIỆT</span></div></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng" aria-hidden="true">
+    <div class="drawer-head"><div><span class="eyebrow">PHÚ GIA</span><h3>Giỏ hàng của bạn</h3></div><button class="drawer-close" id="closeCart" aria-label="Đóng giỏ hàng">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>✳</span><strong>Giỏ hàng đang trống</strong><p>Hãy thêm sản phẩm bạn quan tâm để tiện trao đổi cùng Phú Gia.</p></div></div>
+    <div class="drawer-foot"><p>Giá sản phẩm sẽ được tư vấn theo kích thước, chất liệu và yêu cầu chế tác.</p><a class="button-primary" id="cartContact" href="tel:0988888888">Liên hệ tư vấn <span>→</span></a></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
